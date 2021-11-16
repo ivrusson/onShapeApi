@@ -1,8 +1,5 @@
-import express from 'express'
-import {credentials} from '../middlewares/credentials.js'
+const express = require('express');
 
-const router = express.Router()
+const router = express.Router();
 
-
-
-export {router as getPart}
+module.exports = router;

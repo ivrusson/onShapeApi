@@ -1,6 +1,5 @@
-import express from 'express'
-import {credentials} from '../middlewares/credentials.js'
-const router = express.Router()
+const express = require('express');
 
+const router = express.Router();
 
-export {router as getUpload}
+module.exports = router;

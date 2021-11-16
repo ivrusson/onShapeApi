@@ -1,8 +1,7 @@
-import express from 'express'
-import {credentials} from '../middlewares/credentials.js'
-const router = express.Router()
-router.get('/stl',credentials,(req,res)=>{
-    res.send('<h1>stl</h1>')
-})
+const express = require('express');
+const router = express.Router();
+router.get('/stl', (req, res) => {
+  res.send('<h1>stl</h1>');
+});
 
-export {router as getStl}
+module.exports = router;

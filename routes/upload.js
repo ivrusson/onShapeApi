@@ -1,8 +1,8 @@
-import express from "express"
-import {credentials} from '../middlewares/credentials.js'
-const router = express.Router()
-router.post('/upload',credentials,(req,res)=>{
-    
-})
+const express = require('express');
+const fileUpload = require('../middlewares/extFiles-array');
+const client = require('../index.js');
+const uploadFile = require('../middlewares/upload-file.js');
+const router = express.Router();
+router.post('/upload', async (req, res) => {});
 
-export {router as upload}
+module.exports = router;
